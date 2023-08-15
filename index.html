@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="X-ppzK4Kuh4lc3-USKnKhIoWL56D0r1jJ5GThC0S-f0" />
-<title>Void</title>
+<title>Lazada Best Finds</title>
 
 
 
@@ -39,10 +39,14 @@ fade bg background:rgba(0, 0, 0,.5);
 a{color:yellow;text-decoration:none;}
 
 
+
 /*warning pls do not fix placements of the 
 css styles or some styles will be lost
 and misplaced ,it would be hard to track
 class, styles ,and structure . goodluck on mentaining the codes */
+
+
+
 body{background:black;background-image:url("bground.jpg");background-repeat:no-repeat;background-position:center;background-attachment:fixed;background-size:cover;}
 .header{border:1px solid transparent;width:100%;height:30px;color:white;}
 .search-bar{background-color: rgba(0, 0, 0,.5);float:right;position:relative;margin:3px;;outline-style:none;;color:white;border:transparent;;border-bottom:1px solid silver;width:30vw;font-family: 'Racing Sans One', cursive;margin-left:0px;}
@@ -87,15 +91,15 @@ marketing strategy also some SEO*/
 .cta-container{ border:2px solid transparent;height:85%;width:auto;display:grid; grid-gap:5px;color:white;}
 @media(orientation:portrait){.cta-container{grid-template-columns:1fr 1fr;overflow:auto;}}
 @media(orientation:landscape){.cta-container{grid-template-rows:1fr 1fr;overflow:auto;}}
-.cta-items{border:1px solid silver;width:100%;}
-.cta-img-cont{height:30vh;width:99%;border:1px solid orange;}
+.cta-items{border:1px solid silver;width:100%;border-radius:10px;}
+.cta-img-cont{height:30vh;width:99%;border:1px solid transparent;}
 .cta-item-img{height:30vh;width:99%;}
 .cta-desc{margin-top:10vh;color:red;font-family: 'Racing Sans One', cursive;}
 .aside-two{border:5px solid transparent;height:105vh;;}
 @media(orientation:landscape){.aside-two{height:180vh;}}
 .aside2-head{color:#702283;text-align:center;margin-top:5px;background:#00b7c2;display:block;font-family: 'Chonburi', cursive;border-radius:5px;}
-.aside-two-items{border:3px solid silver;/*border-top:2px hidden;border-bottom:2px hidden;*/display:grid;grid-template-columns:repeat(5,1fr);gap:5px;overflow-x:auto;}
-.best-pick-monthly{border:2px solid orange;width:50vw;margin-top:5vh;height:30vh;background-color: rgba(0, 0, 0,.5);}
+.aside-two-items{border:3px solid hidden;/*border-top:2px hidden;border-bottom:2px hidden;*/display:grid;grid-template-columns:repeat(5,1fr);gap:5px;overflow-x:auto;}
+.best-pick-monthly{border:2px solid hidden;width:50vw;margin-top:5vh;height:30vh;background-color: rgba(0, 0, 0,.5);}
 @media(orientation:landscape){.best-pick-monthly{height:53vh;width:40vw;}}
 .bpm-img{border:1px solid silver;width:100vw;height:30vh;}
 .bpm-img-container{width:99%;height:20vh;border:1px solid blue;}
@@ -121,12 +125,12 @@ marketing strategy also some SEO*/
 .section-container{border:1px solid transparent;height:55vh;background-color: rgba(0, 0, 0,.5);margin-top:10vh;}
 .section-head{color:#702283;text-align:center;background:#00b7c2;font-family: 'Chonburi', cursive;;border-radius:5px}
 .section-description{color:#1bf5af;text-align:center;}
-.section-item-container{height:50vh;border:3px solid green;display:grid;grid-template-row:repeat(4,1fr);gap:5vh;overflow:auto;margin-bottom:10px;}
+.section-item-container{height:50vh;border:3px solid hidden;display:grid;grid-template-row:repeat(4,1fr);grid-gap:10vh;overflow:auto;margin-bottom:10px;}
 .section-items{border:2px solid red;width:80%;height:35vh;margin-left:10%;overflow:hidden;margin-top:5px;}
 @media (orientation:landscape){.section-container{height:60vh;}
                                .section-items{height:40vh;width:60vw;}
                               .section-item-container{height:45vh;grid-template-columns:repeat(5,1fr);gap:5px;overflow-y:scroll;}}
-.sec-img-cont{z-index:10;border:3px solid brown;width:60%;height:95%;float:left;margin:1px;}
+.sec-img-cont{z-index:10;border:3px solid transparent;width:60%;height:95%;float:left;margin:1px;}
 .section-image{z-index:10;width:100%;height:auto;margin:0px;}
 .sec-head{color:white;text-align:center;}
 .sec-desc{color:gray;white-space:nowrap;animation-name:description;position:relative;animation-duration:10s;animation-iteration-count:infinite;animation-direction:alternate;animation-timing-function:lenear;transition-duration:4s;}
@@ -156,6 +160,31 @@ to{left:200px; }
 
 .kptd-head{color:red;text-align:center;position:relative;}
 
+
+/*-----------------modern scrollbar from w3 schools copied------/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;height:10px;s
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 30px black; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #702283; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: fuchsia; 
+}
+/*-----------------modern scrollbar from w3 schools copied------/
+
 /*closing the style */
 </style>
 
@@ -180,14 +209,20 @@ float:right;margin:3px;background-color: rgba(0, 0, 0,.5);border-left:1px solid 
 <div >
 <article>
 <div class="article-container">
-<h1 class="head" >headline here</h1>
-<time class="time"> updated August # 2020, 10:00</time>
-<p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
-The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
-
-The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
-
-
+<h1 class="head" >Lazada Best Finds</h1>
+<time class="time"> updated August 15 2023, 10:00pm</time>
+<p class="content"><b></b>Welcome  to Void Marketplace.</b>
+here we have cherry picked some low cost,yet the best and fancy items we can find from lazada itself.we offer products that are 5 star guaranteed ,and  has  the best reviews from other users just like you.
+we make this so sure, that we only pick items  that meets our own stabndards.
+ so that any users that
+  may buy from our pruduct list wont have any problem during the delivery date of their chosen items.
+  the most important thing here is  that since we are cherrypicking   valuable items only ,this means we only pick 100% guaranteed items ,with 100% good reviews  from the users.this reduces  chances  that users might get scammed.
+  so  users  can now rest easy . and not worry about scam stores  from lazada . and  by screening/cherrypicking items  from lazada  ,  we can now confidently say that our listed items  would  be scam free . because we only list items  that has good reviews ,
+  not the one that looks  sketchy .we promise that we only  advertise  products  that are  reviewed  from our management itself,   and before we  advertise  them  we  check each item if  they pass all our product standards .
+  so we can say that users are  100% safe to buy  from here .
+   we hope  that maybe some of our listings might  ""strike  your fancy!"". <br>enjoy your browsing  <br>
+  
+  -Void Marketplace 
 </p>
 </div>
 </article>
@@ -199,7 +234,7 @@ The passage experienced a surge in popularity during the 1960s when Letraset use
 
 <div class="cta-container" >
 <div class="cta-items"><div class="cta-img-cont"><img class="cta-item-img"src="##" alt="bow"><p class="cta-desc">The passage experienced a surge in popularity during the 1960s when Letraset used it </p></div></div>
-<div class="cta-items"><div class="cta-img-cont"><img class="cta-item-img"src="##" alt="bow"><p class="cta-desc">The passage experienced a surge in popularity during the 1960s when Letraset used it </p></div><</div>
+<div class="cta-items"><div class="cta-img-cont"><img class="cta-item-img"src="##" alt="bow"><p class="cta-desc">The passage experienced a surge in popularity during the 1960s when Letraset used it </p></div></div>
 <div class="cta-items"><div class="cta-img-cont"><img class="cta-item-img"src="##" alt="bow"><p class="cta-desc">The passage experienced a surge in popularity during the 1960s when Letraset used it </p></div></div>
 <div class="cta-items"><div class="cta-img-cont"><img class="cta-item-img"src="##" alt="bow"><p class="cta-desc">The passage experienced a surge in popularity during the 1960s when Letraset used it </p></div></div>
 </div>
