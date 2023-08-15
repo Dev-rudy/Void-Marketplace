@@ -1,0 +1,424 @@
+<!DOCTYPE html>    <!---code author:allen/aka. rudy---->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="X-ppzK4Kuh4lc3-USKnKhIoWL56D0r1jJ5GThC0S-f0" />
+<title>Void</title>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,700;1,200;1,600&family=Chonburi&family=League+Gothic&family=Libre+Barcode+39+Text&family=Megrim&family=Racing+Sans+One&family=Silkscreen:wght@400;700&family=Style+Script&family=Thasadith:ital,wght@0,400;1,400;1,700&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+<!---font-family: 'Alumni Sans', sans-serif;
+font-family: 'Chonburi', cursive;
+font-family: 'League Gothic', sans-serif;
+font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Megrim', cursive;
+font-family: 'Racing Sans One', cursive;
+font-family: 'Silkscreen', cursive;
+font-family: 'Style Script', cursive;
+font-family: 'Thasadith', sans-serif;
+font-family: 'Zen Tokyo Zoo', cursive;
+head      color:#702283;
+content   color:#1bf5af;  
+fade bg background:rgba(0, 0, 0,.5);
+---->
+
+<!----id list
+---------------->
+
+
+<style type="text/css">
+
+*{margin:0px;padding:0px;transition-duration:3s;}
+a{color:yellow;text-decoration:none;}
+
+
+/*warning pls do not fix placements of the 
+css styles or some styles will be lost
+and misplaced ,it would be hard to track
+class, styles ,and structure . goodluck on mentaining the codes */
+body{background:black;background-image:url("bground.jpg");background-repeat:no-repeat;background-position:center;background-attachment:fixed;background-size:cover;}
+.header{border:1px solid transparent;width:100%;height:30px;color:white;}
+.search-bar{background-color: rgba(0, 0, 0,.5);float:right;position:relative;margin:3px;;outline-style:none;;color:white;border:transparent;;border-bottom:1px solid silver;width:30vw;font-family: 'Racing Sans One', cursive;margin-left:0px;}
+.query{color:red;position:relative;font-size:1rem;margin:auto;display:inline-block;float:right;font-family: 'Style Script', cursive;}
+
+.navigator{display:grid;grid-template-columns:repeat(5,1fr);border-bottom:2px solid transparent;border-radius:20px;}
+.nav-item{border:1px solid transparent;height:auto;width:auto;color:white;text-align:center;background-color: rgba(0, 0, 0,.5);}
+.nav-item>a>p{margin-top:40px;font-size:1rem;font-family: 'Zen Tokyo Zoo', cursive;color:#1bf5af;transition-duration:3s;}
+.nav-item>a>p:hover{text-decoration:underline;font-size:1.5rem;}
+.logo{height:auto;width:5rem;}
+.container{border:1px solid transparent;width:99%;height:700vh; margin-top:0px;margin-bottom:0px;}
+@media(orientation:landscape){.container{width:80%;margin:auto;height:600vh;}}
+.article-container{border:3px solid transparent;overflow:auto; background:rgba(0, 0, 0,.5);}
+.head{letter-spacing:5px;color:#702283;text-align:center;background:#00b7c2;opacity:.9;font-family: 'Zen Tokyo Zoo', cursive;border-radius:10px;font-size:xx-large;}
+.content{color:#1bf5af;text-align:center;font-size:1rem;margin:10vw;margin-top:0px;font-family: 'Megrim', cursive;}
+
+.aside{border:1px solid transparent;height:100vh;width:auto;display:grid;grid-gap:5px;}
+@media (orientation:portrait){.aside{grid-template-rows:1fr 1fr;}}
+@media (orientation:landscape){.aside{grid-template-columns:1fr 1fr;}}
+.best-pick{border:1px solid transparent;height:50vh;width:99%;margin:0px;background-color: rgba(0, 0, 0,.5);}
+.select-products{border:1px solid transparent;height:50vh;width:99%;margin:0px;background-color: rgba(0, 0, 0,.5);}
+@media (orientation:landscape){
+                               .best-pick{height:100vh;}
+                                .select-products{height:100vh;}}
+.cta1head{color:#702283;text-align:center;background:#00b7c2;font-family: 'Chonburi', cursive;border-radius:5px;}
+.cta2head{color:#702283;text-align:center;background:#00b7c2;font-family: 'Chonburi', cursive;border-radius:5px;}
+.cta2head:after{content:"From lazada";display:block;font-size:1rem;color:fuchsia;}
+.cta2-li{color:black;text-align:center;line-height:8.5vh;list-style-type:none;}
+@media(orientation:landscape){.cta2-li{line-height:17vh;}}
+.discover-li{border:1px solid silver;font-family: 'Zen Tokyo Zoo', cursive;font-weight:bold;color:#1bf5af;font-size:2rem;border-radius:10px;margin-bottom:5px;}
+
+#free-shipping{background-image:url("https://wallpaperaccess.com/full/3870385.jpg");background-position:center;background-size:cover;}
+#trending{background-image:url("https://th.bing.com/th/id/OIP.EIghF9xYiMYSkqnj6SKXQgHaE8?pid=ImgDet&rs=1");background-position:center;background-size:cover;}
+#less-hundred{background-image:url("https://th.bing.com/th/id/OIP.2A9AtRnikNDctingKL_uwwHaDh?pid=ImgDet&w=482&h=229&rs=1");background-position:center;background-size:cover;}
+#home{background-image:url("https://thumbs.dreamstime.com/b/home-decor-gift-items-interior-decoration-colored-background-home-decor-gift-items-interior-decoration-185556898.jpg");background-position:center;background-size:cover;}
+
+
+/*pls be active with the cta section be more 
+persuasive about yourbown cta layouts and
+marketing strategy also some SEO*/
+
+.cta-container{ border:2px solid transparent;height:85%;width:auto;display:grid; grid-gap:5px;color:white;}
+@media(orientation:portrait){.cta-container{grid-template-columns:1fr 1fr;overflow:auto;}}
+@media(orientation:landscape){.cta-container{grid-template-rows:1fr 1fr;overflow:auto;}}
+.cta-items{border:1px solid silver;width:100%;}
+.cta-img-cont{height:30vh;width:99%;border:1px solid orange;}
+.cta-item-img{height:30vh;width:99%;}
+.cta-desc{margin-top:10vh;color:red;font-family: 'Racing Sans One', cursive;}
+.aside-two{border:5px solid transparent;height:105vh;;}
+@media(orientation:landscape){.aside-two{height:180vh;}}
+.aside2-head{color:#702283;text-align:center;margin-top:5px;background:#00b7c2;display:block;font-family: 'Chonburi', cursive;border-radius:5px;}
+.aside-two-items{border:3px solid silver;/*border-top:2px hidden;border-bottom:2px hidden;*/display:grid;grid-template-columns:repeat(5,1fr);gap:5px;overflow-x:auto;}
+.best-pick-monthly{border:2px solid orange;width:50vw;margin-top:5vh;height:30vh;background-color: rgba(0, 0, 0,.5);}
+@media(orientation:landscape){.best-pick-monthly{height:53vh;width:40vw;}}
+.bpm-img{border:1px solid silver;width:100vw;height:30vh;}
+.bpm-img-container{width:99%;height:20vh;border:1px solid blue;}
+
+.bpm-title{color:white;text-align:left;}
+.bpm-shop-owner{color:gray;font-size:.5rem;}
+@media(orientation:landscape){.bpm-img-container{height:30vh;width:30vw;margin:auto;}
+                               .bpm-title{text-align:center;}
+                               .bpm-shop-owner{text-align:center;}}
+.footer{border:1px solid #702283 ;height:55vh;width:100%;color:gray;text-align:center;font-size:.5rem;overflow:hidden;transition-duration:3s;background-color: rgba(0, 0, 0,.5);}
+.footer-head{color:white;background:gray;}
+.footer-item-container{border:1px solid transparent;margin:auto;height:7vh;width:50vw;white-space:wrap;}
+.footer-item{border:1px solid transparent;width:10vw;height:5vh;float:left;margin:3px;}
+@media(orientation:landscape){.footer{height:80vh;}
+                                                       .footer-item{height:12vh;width:8vw;}
+                                                      .footer-item-container{height:20vh;width:38vw;}}
+  .foot-desc-one{text-align:center;font-size:.5rem;}
+.footer-desc{float:left;position:absolute;left:2px;display:block;}
+.item-standards{color:red;}
+
+.footer-ending{color:green;}
+
+.section-container{border:1px solid transparent;height:55vh;background-color: rgba(0, 0, 0,.5);margin-top:10vh;}
+.section-head{color:#702283;text-align:center;background:#00b7c2;font-family: 'Chonburi', cursive;;border-radius:5px}
+.section-description{color:#1bf5af;text-align:center;}
+.section-item-container{height:50vh;border:3px solid green;display:grid;grid-template-row:repeat(4,1fr);gap:5vh;overflow:auto;margin-bottom:10px;}
+.section-items{border:2px solid red;width:80%;height:35vh;margin-left:10%;overflow:hidden;margin-top:5px;}
+@media (orientation:landscape){.section-container{height:60vh;}
+                               .section-items{height:40vh;width:60vw;}
+                              .section-item-container{height:45vh;grid-template-columns:repeat(5,1fr);gap:5px;overflow-y:scroll;}}
+.sec-img-cont{z-index:10;border:3px solid brown;width:60%;height:95%;float:left;margin:1px;}
+.section-image{z-index:10;width:100%;height:auto;margin:0px;}
+.sec-head{color:white;text-align:center;}
+.sec-desc{color:gray;white-space:nowrap;animation-name:description;position:relative;animation-duration:10s;animation-iteration-count:infinite;animation-direction:alternate;animation-timing-function:lenear;transition-duration:4s;}
+@keyframes description{
+from{ left:-200px;}
+to{left:200px; }
+}
+
+/*sectuon description */ 
+.sec-descc{width:35%;height:20px;border:2px solid green;margin-left:62%;overflow:hidden;}
+.section-two{margin-top:10vh;}
+.section2-main-container{display:grid;grid-template-rows:repeat(2,1fr);height:5.5vh;border:1px  solid  green;background-color: rgba(0, 0, 0,.5);overflow:auto;}
+@media(orientation:landscape){ .section2-main-container{grid-template-columns:repeat(2,1fr);height:100vh;}
+                              }
+.section2-container{border:1px  solid  hidden ;width:100%;height:100vh;overflow:auto;background-color: rgba(0, 0, 0,.5);}
+.section2-head{color:#702283;text-align:center;background:#00b7c2;font-family: 'Chonburi', cursive;border-radius:5px;font-size:1rem;}
+
+.subheading{color:#e94822;font-family: 'Silkscreen', cursive;font-weight:bold;text-align:center;}
+.sec3-subheading{/*color:#e94822;*/font-family: 'Silkscreen', cursive;font-weight:bold;text-align:center;background:lightblue;border-radius:10px;}
+.btn-reads1{color:#1bf5af;;font-weight:bold;background:purple;;margin-left:45%;}
+.btn-reads2{color:#1bf5af;position:absolute;font-weight:bold;background:purple;float:left;}
+.section3-container{border:1px  solid  orange ;width:100%;height:100vh;overflow:auto;background-color: rgba(0, 0, 0,.5);margin-left:3px;}
+.zoom-top>a{position:fixed;bottom:5px;right:5px;font-size:5vh;opacity:0.5;}
+
+.mark{color:red;font-family: 'Libre Barcode 39 Text', cursive;font-size:2rem;display:block;}
+.time{font-size:xx-small;color:gray;text-align:center;font-family: 'Chonburi', cursive;}
+
+.kptd-head{color:red;text-align:center;position:relative;}
+
+/*closing the style */
+</style>
+
+</head>
+<body>
+<header class="header" id="head"><input id="search"class="search-bar"type="search" name="search" placeholder="search id">
+
+<a id="id-search" href="#"  onclick="myfunc(),myfunct()"><i class="bi bi-search-heart" style="font-size:1rem;color:gray;background:transparent;
+float:right;margin:3px;background-color: rgba(0, 0, 0,.5);border-left:1px solid silver;border-bottom:1px solid silver;margin-right:0px;" >
+</i></a>
+
+<p class="query" id="query">pls start with hashtag(#)👉</p></header>
+<nav class="navigator">
+<div class="nav-item"><a href="#about"><p>about</p></a></div>
+<div class="nav-item"><a href="#channels"><p>channels</p></a></div>
+<div class="nav-item"><img class="logo" src="logo2.png" alt="void official logo" title=""></div>
+<div class="nav-item"><a href="#contents"><p>Contents</p></a></div>
+<div class="nav-item"><a href="#offers"><p>Offers</p></a></div>
+</nav>
+<div class="container">
+
+<div >
+<article>
+<div class="article-container">
+<h1 class="head" >headline here</h1>
+<time class="time"> updated August # 2020, 10:00</time>
+<p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
+
+The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+
+
+</p>
+</div>
+</article>
+
+<aside class="aside">
+
+<div class="best-pick">
+<h2 class="cta1head" id="offers">learn more</h2>
+
+<div class="cta-container" >
+<div class="cta-items"><div class="cta-img-cont"><img class="cta-item-img"src="##" alt="bow"><p class="cta-desc">The passage experienced a surge in popularity during the 1960s when Letraset used it </p></div></div>
+<div class="cta-items"><div class="cta-img-cont"><img class="cta-item-img"src="##" alt="bow"><p class="cta-desc">The passage experienced a surge in popularity during the 1960s when Letraset used it </p></div><</div>
+<div class="cta-items"><div class="cta-img-cont"><img class="cta-item-img"src="##" alt="bow"><p class="cta-desc">The passage experienced a surge in popularity during the 1960s when Letraset used it </p></div></div>
+<div class="cta-items"><div class="cta-img-cont"><img class="cta-item-img"src="##" alt="bow"><p class="cta-desc">The passage experienced a surge in popularity during the 1960s when Letraset used it </p></div></div>
+</div>
+
+</div>
+
+<div class="select-products" id="cta-container">
+<h2 class="cta2head">discover more</h2>
+ <ul class="cta2-li">
+  <li class="discover-li" id="free-shipping"><a href="subpage .html #free-shippings">Free shipping</a></li>
+  <li class="discover-li" id="less-hundred"><a href="subpage .html #hundreds">less than 100</a></li>
+  <li class="discover-li" id="trending"><a href="subpage .html #trending">trending/tiktok</a></li>
+  <li class="discover-li" id="home"><a href="subpage .html #home-items">home hacks</a></li>
+ </ul>
+</div>
+
+</aside>
+
+</div>
+
+<aside class="aside-two">
+<h2 class="aside2-head">best pick for this month</h2>
+<div class="aside-two-items">
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+</div>
+
+<div class="aside-two-items">
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+</div>
+
+<div class="aside-two-items">
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="prod-one"><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+</div>
+</aside>
+<section>
+<div class="section-container">
+<h2  id="contents"class="section-head">whatch our contents</h2>
+<p class="section-description">watch our daily content and learn more </p>
+<div class="section-item-container">
+<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">how to get chouchies</h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
+<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">how to get chouchies</h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
+<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">how to get chouchies</h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
+<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">how to get chouchies</h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
+<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">how to get chouchies</h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="section-two">
+<div class="section2-main-container"id="section-two">
+<div class="section2-container" >
+<h2 class="section2-head" id="section2-head">How not to get SCAMMED?</h2>
+<p class="section-description"> Lets  admit it!  a lot of  us sometimes even blame the curier/delivery guy<br>  if we get the wrong item from our orders . 
+but what people dont know  is that they are the one to   blame regarding this matter.its because they are the one whose  checking things out,and confirming orders.  starting from the order stage to delivery day.people sometimes 
+act that they dont even know  
+anything about what they order when  the parcel  already came .how is that?.
+now to avoid this situation we give you some advice on how to avoid </p>
+
+
+<h3 class="subheading"> Online Shopping Scams </h3><br>
+<h4  class="subheading">#1.) Look at the  Ratings</h4><br>
+<p class="section-description"> you can actually tell if a pruduct is legit if it has  (5 🌟🌟🌟🌟⭐stars) rating and ofcourse after cheking the Ratings you can then check the pruduct discription
+if it realy looks legit, a lot of  scammers  use  google translator  just to  translate their own words  into  English ,you can encounter a lot like this if you observe the descriptions  Ex; a lot  of  rip off gadget  stores  have this  lack of perfection 
+and grammar  when it comes  to pruduct descriptions,you can actually catch 
+missing characters  and  wrong words inserted on the description  itself. So thats  the first thing  right there. only pick pruducts that has  5 or 4 star rating ,and has a good description details ok :) </p>
+<br>
+<h4 class="subheading">#2.)Comment Sections </h4><br>
+<p class="section-description"> well after looking up to ratings and product descriptipons ,you should  also  give an attention to comment section of the current  store where your buying your  items .
+comment section would  have your fellow users  giving their oppinion about the product,and also  how  the pruduct   would  look like once  users  have received  it . you can also  look at the 
+comment section  if you  want to read  other users  reviews  before considering buying a product ,always  remember  if  a store  or  a product has  a lot  of bad comments  it wont even level up to 4star rating .
+so  if you are considering  to buy a product  pls read  the comment section first  and  consult  to other users  opinions   before buying the item itself .bad  comments  is  already the indication that you should  stay away 
+from that  product .</p>
+
+<br>
+<h4 class="subheading">#3.)Pruduct Image/Appearance</h4><br>
+<p class="section-description"> we  all rely  on Appearance sometimes .and also somemtimes  some  short description can be seen  on the pruduct image,  and people  just go ahead  and   buy  it,boom.  sometimes it  also happens  that  images  tell users  that 
+it offers  free shipping,  but it  doesnt  realy  avail  these  options. so  as  you can see  people  sometimes  rely on the images  that they see ,posted  as  the face of the pruduct they sell  online .,but 
+in the end  they get dissapointed  that they did not even get the benefit of free shipping ,they get the werong size/color/item,sometimes  items  get to deliver in the wrong time (took a week),.well to avoid this
+you should  stop  relying on product apperance or image .always remember  no matter how parsuasive  and  good looks  the pruduct might be on the image  ,dont buy on that verry quick 
+please  read  on the descriptions  verry well, pick the right variant,check if it has good  rating,also  check if it has  goood  comments,  a product which hs  a lot of bad  comments should  be the one you should  stay away of,
+also pruductsthat doesnt have review at all </p>
+</div>
+
+<div class="section3-container"><a href="kptd subpage.html"><h3 id="kptd" class="sec3-subheading"><span style="color:red;">K</span><span style="color:white;">P</span><span style="color:green;">T</span><span style="color:gold;">D</span>(exclusives😘)</h3></a><br>
+
+<div class="aside-two-items"> <!---pls  do not copy this one  /this one is  just reused template from  the main  (aside-two-items ) ---->
+
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+</div>
+
+<div class="aside-two-items">
+
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+</div>
+
+<div class="aside-two-items">
+
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+</div>
+
+
+</div>
+
+</div>
+<button type="button" class="btn-reads1"onclick="show()">open</button> <button type="button" class="btn-reads2" onclick="hide()"><a href="#section2-head" style="color:#1bf5af;">close</a></button>
+</section>
+
+</div>
+<footer class="footer" id="channels">
+<h4 class="footer-head">About/infos</h4>
+<p class="foot-desc-one">site author:rudy/allen 🧑‍💻;<br>
+please follow us in our social medias and channels</p>
+<div class="footer-item-container">
+<div class="footer-item"><i class="bi bi-facebook" style="font-size:2rem;color:blue;"></i></div>
+<div class="footer-item"><i class="bi bi-instagram" style="font-size:2rem;color:fuchsia;"></i></div>
+<div class="footer-item"><i class="bi bi-youtube" style="font-size:2rem;color:red;"></i></div>
+<div class="footer-item"><i class="bi bi-tiktok" style="font-size:2rem;color:black;"></i></div>
+<br><br><br><br><br>
+<p id="about"class="footer-desc">please use this platforms if you want to send us direct message
+or you can send us<br> an email,@:<a href="https://mail.google.com/mail/mu/mp/28/#co">allenjesterogaralde33@gmail.com</a>
+<br><span style="color:red;font-weight:bold;text-decoration:underline;text-decoration-style:double;">ABOUT:</span>this Website makes it easy for the users to find good items from the market.we have made shoping much esier by picking 
+only valuable pruducts that may strike user's interest.we have picked pruducts that may avail users <a href="#cta-container">free shiping</a>.also some affordable
+ <a href="#cta-container">trending items</a>,we also picked <a href="#cta-container">items less that 100 peso</a>,and items you can use for your home aswell<a href="#cta-container">(home items)</a>
+ <br>the sole purpose of this website is to find items that are affordable yet looks fancy,yes we have picked 
+ it so you wont have to spend more time scrolling on an shopping apps or websites<br>
+ and yes we only pick items which satisfy our standards and expectations,this might fall under these categories.
+ <span class="item-standards" > <br>has 5 star review----------------------------------------------------------------------------------✅
+ <br>has good comments(by users/buyers)------------------------------------------------✅
+ <br>recomended by other user's-----------------------------------------------------------------✅
+ <br>legitimate product--------------------------------------------------------------------------------✅
+ <br>legitimate seller/store/platform-----------------------------------------------------------✅</span>
+ <br>
+ <span class="footer-ending">please keep in mind that we have reduced the chance where u would  pick
+ a scam items😘. but even having this in mind we still require you to read pruduct descriptions before clicking add to cart, or (buy now)button
+ we recomend reading reviews so you wont have problems with your orders</span>
+ 
+ <span class="mark">Void Marketplace©</span>
+ </p>
+<!--i have used much br tag sorry---->
+ 
+ 
+</div>
+</footer>
+
+
+
+<div class="zoom-top"><a href="#head"><i class="bi bi-arrow-up-square-fill" style="color:#1bf5af; "title="Move to the top" ></i></a></div>
+
+<!--javascript section------------------------>
+<script type="text/javascript">
+
+console.log("hello USER  (❛̃ ͜ʖ❛̃)✌");
+console.log("pls follow me on my social media platforms hover on FOOTER")
+function show(){ console.log("openned the article/dl  section");
+document.getElementById("section-two").style.height="100vh";
+                }
+
+function hide(){ console.log("closed the article/dl  section");
+document.getElementById("section-two").style.height="5.5vh";
+}
+//----------------------------------------------------------------------------
+function myfunc(){
+let data=document.getElementById("search");
+let x=data.value;
+let word=document.getElementById("query");
+switch (x){
+case "free shipping": word.innerHTML="plsease click this button '<a href='#free-shipping'>free shipping</a>' ";
+break;
+case "#about": word.innerHTML="item is Available  bellow ";
+break;
+case "#prod-one": word.innerHTML="item is Available  bellow ";
+break;
+case "#kptd": word.innerHTML="enjoy  KPTD exclusives";
+break;
+case  "": word.innerHTML="cant find item";
+break;
+case "#": word.innerHTML="item is Available  bellow ";
+break;
+case "#": word.innerHTML="item is Available  bellow ";
+break;
+case "#": word.innerHTML="item is Available  bellow ";
+break;
+default : word.innerHTML="ID NOT MATCH!!";   // we arer having an error  because strings  are getting set  as  attribute of  href  on  myfunct function 
+break;}
+
+
+//the unique id  would  depend only  on  pruduct name  ok  external id  
+//like  about/head/section ids' would  not be used  in this matter
+}
+function myfunct(){
+let datas=document.getElementById("search");
+let y=datas.value
+let btn=document.getElementById("id-search");
+    btn.setAttribute("href",y);
+
+}
+
+//pls validate the search engine using 
+// switch statement and if we have string as search query concatenate (#+string)
+//then try to put it in myfunct function
+</script>
+
+</body>
+</html>
