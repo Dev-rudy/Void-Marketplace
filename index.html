@@ -60,7 +60,10 @@ body{background:black;background-image:url("bground.jpg");background-repeat:no-r
 .nav-item>a>p:hover{text-decoration:underline;font-size:1.5rem;}
 .logo{height:auto;width:5rem;}
 .container{border:1px solid hidden;width:99%;height:550vh; margin-top:0px;margin-bottom:0px;}
-@media(orientation:landscape){.container{width:80%;margin:auto;height:700vh;}}
+@media(orientation:landscape){.container{width:80%;margin:auto;height:860vh;}}
+
+#main-container{}
+
 .article-container{border:3px solid transparent;overflow:auto; background:rgba(0, 0, 0,.5);}
 .head{letter-spacing:5px;color:#702283;text-align:center;background:#00b7c2;opacity:.9;font-family: 'Zen Tokyo Zoo', cursive;border-radius:10px;font-size:xx-large;}
 .content{color:#1bf5af;text-align:center;font-size:1rem;margin:10vw;margin-top:0px;font-family: 'Megrim', cursive;}
@@ -156,8 +159,9 @@ to{left:200px; }
 
 .subheading{color:#e94822;font-family: 'Silkscreen', cursive;font-weight:bold;text-align:center;}
 .sec3-subheading{/*color:#e94822;*/font-family: 'Silkscreen', cursive;font-weight:bold;text-align:center;background:lightblue;border-radius:10px;}
-.btn-reads1{color:#1bf5af;;font-weight:bold;background:purple;;margin-left:45%;}
-.btn-reads2{color:#1bf5af;position:absolute;font-weight:bold;background:purple;float:left;}
+.btn-reads1{color:#1bf5af;;font-weight:bold;background:purple;;margin-left:40vw;}
+@media(orientation:landscape){.btn-reads1{margin-left:33vw;}}
+.btn-reads2{color:#1bf5af;position:absolute;font-weight:bold;background:purple;float:left;margin-left:3vw;}
 .section3-container{border:1px  solid  orange ;width:100%;height:100vh;overflow:auto;background-color: rgba(0, 0, 0,.5);margin-left:3px;}
 .zoom-top>a{position:fixed;bottom:5px;right:5px;font-size:5vh;opacity:0.5;}
 
@@ -213,7 +217,7 @@ float:right;margin:3px;background-color: rgba(0, 0, 0,.5);border-left:1px solid 
 <div class="nav-item"><a href="#contents"><p>Contents</p></a></div>
 <div class="nav-item"><a href="#offers"><p>Offers</p></a></div>
 </nav>
-<div class="container">
+<div class="container" id="main-container">
 
 <div >
 <article>
@@ -427,10 +431,12 @@ console.log("hello USER  (❛̃ ͜ʖ❛̃)✌");
 console.log("pls follow me on my social media platforms hover on FOOTER")
 function show(){ console.log("openned the article/dl  section");
 document.getElementById("section-two").style.height="100vh";
+document.getElementById("main-container").style.height="800vh"
                 }
 
 function hide(){ console.log("closed the article/dl  section");
 document.getElementById("section-two").style.height="5.5vh";
+document.getElementById("main-container").style.height="770vh"
 }
 //----------------------------------------------------------------------------
 function myfunc(){
