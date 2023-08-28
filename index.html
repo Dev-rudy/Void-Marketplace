@@ -123,18 +123,23 @@ marketing strategy also some SEO*/
 #cta4{background-image:url("https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=600");background-repeat:no-repeat;background-position:center;background-size:cover;}
 .aside-two{border:5px solid transparent;height:105vh;margin-top:5vh;}
 @media(orientation:landscape){.aside-two{height:180vh;}}
-.aside2-head{color:#702283;text-align:center;margin-top:5px;background:#00b7c2;display:block;font-family: 'Chonburi', cursive;border-radius:5px;}
-.aside-two-items{border:3px solid hidden;/*border-top:2px hidden;border-bottom:2px hidden;*/display:grid;grid-template-columns:repeat(5,1fr);gap:5px;overflow-x:auto;}
-.best-pick-monthly{border:2px solid hidden;width:50vw;margin-top:5vh;height:30vh;background-color: rgba(0, 0, 0,.5);}
-@media(orientation:landscape){.best-pick-monthly{height:53vh;width:40vw;}}
-.bpm-img{border:1px solid silver;width:100vw;height:30vh;}
-.bpm-img-container{width:99%;height:20vh;border:1px solid blue;}
 
-.bpm-title{color:white;text-align:left;}
-.bpm-shop-owner{color:gray;font-size:.5rem;}
-@media(orientation:landscape){.bpm-img-container{height:30vh;width:30vw;margin:auto;}
+.aside2-head{color:#702283;text-align:center;margin-top:5px;background:#00b7c2;display:block;font-family: 'Chonburi', cursive;border-radius:5px;}
+.aside-two-items{border:3px solid silver;/*border-top:2px hidden;border-bottom:2px hidden;*/display:grid;grid-template-columns:repeat(10,1fr);gap:5px;overflow-x:auto;}
+.best-pick-monthly{border:2px solid orange;width:30vw;margin-top:5vh;height:30vh;background-color: rgba(0, 0, 0,.5);}
+@media(orientation:landscape){.best-pick-monthly{height:53vh;width:40vw;}}
+.bpm-img{width:18vw;height:33vh;margin-left:5vw;border-radius:3vw;transition-duration:1s;}
+.bpm-img:hover{box-shadow:1px  1px 30px  5px gold;border:5px solid lightblue;}
+.bpm-img-container{width:99%;height:20vh;border:1px solid hidden;}
+@media(orientation:portrait){.bpm-img{height:15vh;width:20vw;margin-top:3vh;}}
+.bpm-title{color:#702283;;text-align:left;white-space:normal;margin-top:5vh;}
+@media(orientation:portrait){.bpm-title{margin-top:0px;text-align:center;font-size:1rem;}}
+.bpm-item-price{color:red;font-size:.5rem;text-shadow:-1px -1px 5px gold;font-weight:bold;font-size:1rem;text-align:center;}
+@media(orientation:landscape){.bpm-img-container{height:30vh;width:30vw;margin:none;}
+                               .bpm-img{margin-left:10vw;margin-top:2vh;}
                                .bpm-title{text-align:center;}
-                               .bpm-shop-owner{text-align:center;}}
+                               .bpm-item-price{text-align:center;margin:auto;}}
+                               
 .footer{border:1px solid #702283 ;height:55vh;width:100%;color:gray;text-align:center;font-size:.5rem;overflow:hidden;transition-duration:3s;background-color: rgba(0, 0, 0,.5);}
 .footer-head{color:white;background:gray;}
 .footer-item-container{border:1px solid transparent;margin:auto;height:7vh;width:50vw;white-space:wrap;}
@@ -148,16 +153,22 @@ marketing strategy also some SEO*/
 
 .footer-ending{color:green;}
 
-.section-container{border:1px solid transparent;height:55vh;background-color: rgba(0, 0, 0,.5);margin-top:15vh;}
+.section-container{border:1px solid transparent;height:54vh;background-color: rgba(0, 0, 0,.5);margin-top:15vh;}
 .section-head{color:#702283;text-align:center;background:#00b7c2;font-family: 'Chonburi', cursive;;border-radius:5px;}
 .section-description{color:#1bf5af;text-align:center;}
-.section-item-container{height:50vh;border:3px solid hidden;display:grid;grid-template-row:repeat(4,1fr);grid-gap:10vh;overflow:auto;margin-bottom:10px;}
-.section-items{border:2px solid red;width:80%;height:35vh;margin-left:10%;overflow:hidden;margin-top:5px;}
-@media (orientation:landscape){.section-container{height:60vh;}
-                               .section-items{height:40vh;width:60vw;}
-                              .section-item-container{height:45vh;grid-template-columns:repeat(5,1fr);gap:5px;overflow-y:scroll;}}
-.sec-img-cont{z-index:10;border:3px solid transparent;width:60%;height:95%;float:left;margin:1px;}
+.section-item-container{height:45vh;border:3px solid hidden;display:grid;grid-template-row:repeat(4,1fr);grid-gap:5vh;overflow:auto;margin-bottom:10px;}
+.section-items{border:2px solid red;width:80%;height:20vh;margin-left:10%;overflow:hidden;margin-top:5px;}
+@media (orientation:landscape){.section-container{height:80vh;}
+                               .section-items{height:60vh;width:45vw;}
+                              .section-item-container{height:68vh;grid-template-columns:repeat(5,1fr);gap:5px;overflow-y:scroll;}
+                              }
+.sec-img-cont{z-index:10;border:3px solid transparent;width:30vw;height:95vh;float:left;margin:1px;}
 .section-image{z-index:10;width:100%;height:auto;margin:0px;}
+@media(orientation:landscape){.sec-img-cont{z-index:10;border:3px solid hidden;width:45%;height:59vh;float:left;margin:1px;}
+                               .section-image{z-index:10;width:100%;height:auto;margin:0px;}}
+                               
+
+
 .sec-head{color:white;text-align:center;}
 .sec-desc{color:gray;white-space:nowrap;animation-name:description;position:relative;animation-duration:10s;animation-iteration-count:infinite;animation-direction:alternate;animation-timing-function:lenear;transition-duration:4s;}
 @keyframes description{
@@ -166,11 +177,11 @@ to{left:200px; }
 }
 
 /*sectuon description */ 
-.sec-descc{width:35%;height:20px;border:2px solid green;margin-left:62%;overflow:hidden;}
+.sec-descc{width:35vw;height:20px;border:2px solid green;margin-left:35vw;;overflow:hidden;}
 .section-two{margin-top:10vh;}
 .section2-main-container{display:grid;grid-template-rows:repeat(2,1fr);height:5.5vh;border:1px  solid  green;background-color: rgba(0, 0, 0,.5);overflow:auto;}
 @media(orientation:landscape){ .section2-main-container{grid-template-columns:repeat(2,1fr);height:100vh;}
-                              }
+                              .sec-descc{width:40%;margin-left:53%;}}
 .section2-container{border:1px  solid  hidden ;width:100%;height:100vh;overflow:auto;background-color: rgba(0, 0, 0,.5);}
 .section2-head{color:#702283;text-align:center;background:#00b7c2;font-family: 'Chonburi', cursive;border-radius:5px;font-size:1rem;}
 
@@ -302,24 +313,24 @@ float:right;margin:3px;background-color: rgba(0, 0, 0,.5);border-left:1px solid 
 <aside class="aside-two">
 <h2 class="aside2-head">best pick for this month</h2>
 <div class="aside-two-items">
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
 </div>
 
 <div class="aside-two-items">
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
 </div>
 
 <div class="aside-two-items">
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id="prod-one"><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="prod-one"><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
 </div>
 </aside>
 <section>
@@ -327,11 +338,11 @@ float:right;margin:3px;background-color: rgba(0, 0, 0,.5);border-left:1px solid 
 <h2  id="contents"class="section-head">whatch our contents</h2>
 <p class="section-description">watch our daily content and learn more </p>
 <div class="section-item-container">
-<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">how to get chouchies</h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
-<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">how to get chouchies</h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
-<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">how to get chouchies</h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
-<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">how to get chouchies</h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
-<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">how to get chouchies</h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
+<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="https://thepreviewapp.com/wp-content/uploads/2021/08/instagram-reels-sizes-dimensions-ratios.jpg" alt="" title=""></div><h4 class="sec-head">Content title here </h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
+<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">Content title here </h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
+<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">Content title here </h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
+<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">Content title here </h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
+<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="" alt="" title=""></div><h4 class="sec-head">Content title here </h4><div class="sec-descc"><p class="sec-desc">yo i like this one😘</p></div></div>
 </div>
 </div>
 </section>
@@ -375,26 +386,26 @@ also pruductsthat doesnt have review at all </p>
 
 <div class="aside-two-items"> <!---pls  do not copy this one  /this one is  just reused template from  the main  (aside-two-items ) ---->
 
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
 </div>
 
 <div class="aside-two-items">
 
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
 </div>
 
 <div class="aside-two-items">
 
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#ggggggggghhhhg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggggggggggggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="#gggghhhhhhgggg" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-shop-owner">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id=""><div class="bpm-img-container"><img class="bpm-img"src="#" alt="item from(lazada)" title=""></div><h3 class="bpm-title">item title</h3><p class="bpm-item-price">shop owner<br>🌟🌟🌟🌟⭐</p></div>
 </div>
 
 
