@@ -229,10 +229,10 @@ to{left:200px; }
   background: fuchsia; 
 }
 /*-----------------modern scrollbar from w3 schools copied------*/
-
-.frame{width:40vw;margin:3vh 20vw 0 20vw;}
-@media(orientation:portrait){.frame{width:90%;height:auto;margin:3vh 5vw 0 5vw;}}
-
+.frame-container{border:2px solid  hidden;width:100%;height:auto;overflow-x:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5vw;margin-top:3vh;background-color: rgba(0, 0, 0,.5);}
+.frame1{height:100%;}
+@media(orientation:portrait){.frame-container{height:98vh;}}
+@media(orientation:landscape){.frame-container{height:40vh;}}
 
 /*.ads{border:1px solid  blue;color:fuchsia;height:50vh;width:80%;margin:auto;text-align:center;font-size:2rem;font-weight:bold;}
 .adsclass{height:auto;width:99%;}*/
@@ -427,7 +427,12 @@ and people just go ahead and buy it. Sometimes it also happens that images tell 
 </div>
 <button type="button" class="btn-reads1"onclick="show()">open</button> <button type="button" class="btn-reads2" onclick="hide()"><a href="#section2-head" style="color:#1bf5af;">close</a></button>
 </section>
- <iframe class="frame"  id="frame"src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02NcWVaARWDBxSjszh2LjnftAHR3wN35FHBcFn3MaSnhPLUdB3AZ2MfRBeWer6UWL9l%26id%3D61550258306981&show_text=true&width=500" width="500" height="612" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>
+
+<div class="frame-container">
+ <iframe class="frame1"  id="frame"src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02NcWVaARWDBxSjszh2LjnftAHR3wN35FHBcFn3MaSnhPLUdB3AZ2MfRBeWer6UWL9l%26id%3D61550258306981&show_text=true&width=500" width="500" height="612" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>
+ <iframe  class="frame1" id="frame"src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02vzGU5bhLkjsRWeosJcVWhch1o19VXoXA8Vb5q6gRAa6Hdn9KATjFtb7d2kzUSZqCl%26id%3D61550258306981&show_text=true&width=500" width="500" height="697" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</div>
+
 </div>
 <footer class="footer" id="channels">
 <h4 class="footer-head">About/infos</h4>
@@ -480,7 +485,7 @@ console.log("pls follow me on my social media platforms hover on FOOTER")
 function show(){ console.log("openned the article/dl  section");
 document.getElementById("section-two").style.height="100vh";
 document.getElementById("main-container").style.height="800vh"
-document.getElementById("frame").style.height="130vh"
+//document.getElementById("frame-container").style.height="100vh"
                 }
 
 function hide(){ console.log("closed the article/dl  section");
