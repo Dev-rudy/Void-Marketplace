@@ -70,6 +70,7 @@ class, styles ,and structure . goodluck on mentaining the codes */
 
 
 body{background:black;background-image:url("bground.jpg");background-repeat:no-repeat;background-position:center;background-attachment:fixed;background-size:cover;}
+@media(orientation:landscape){body{background:black;background-image:url("https://scontent.fcrk2-2.fna.fbcdn.net/v/t1.15752-9/373030022_322629946955570_3514143750569960136_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=vgJ4scuds_gAX8SYSz_&_nc_ht=scontent.fcrk2-2.fna&oh=03_AdQN6NJy0TWeiCtqAe15An0FoN_RhLp1dx24TnIAs-uj7Q&oe=651F5692");background-repeat:no-repeat;background-position:center;background-attachment:fixed;background-size:cover;}}
 .header{border:1px solid transparent;width:100%;height:30px;color:white;}
 .search-bar{background-color: rgba(0, 0, 0,.5);float:right;position:relative;margin:3px;;outline-style:none;;color:white;border:transparent;;border-bottom:1px solid silver;width:30vw;font-family: 'Racing Sans One', cursive;margin-left:0px;}
 .query{color:red;position:relative;font-size:1rem;margin:auto;display:inline-block;float:right;font-family: 'Style Script', cursive;}
@@ -266,7 +267,7 @@ float:right;margin:3px;background-color: rgba(0, 0, 0,.5);border-left:1px solid 
 <article>
 <div class="article-container">
 <h1 class="head" >Lazada Best Finds</h1> <!----- keyword dificulty(kd) 26 score---->
-<time class="time"> updated August 15 2023, 10:00pm</time>
+<!---------------<time class="time"> updated August 15 2023, 10:00pm</time>------------>
 <p class="content"><b>Welcome to Void Marketplace.</b>
  here we have selected some of the cheapest, yet best and most outrageous 
  items we can find on Lazada itself. we offer products that are guaranteed 5 stars and
@@ -478,12 +479,12 @@ only valuable pruducts that may strike user's interest.we have picked pruducts t
 <script type="text/javascript">
 
 let browser=confirm("😲 👉Please open website on 'CHROME 😋' or  'EDGE🌐' browser  for better rendering results.  click (Cancel if you already use Chrome) 😘😘😘")
-if (browser===true){window.open('https://void-market.netlify.app/','_blank')}  // this method  forces the main page to open in chrome  or browser   the link rendered  from fb  or  meta versions is rendered  bad  sp it should be openned  in chrome  
+if (browser===true){window.open('https://void-market.netlify.app/','_blank')} //only for users  who render or redirect  from  fb  
 
 console.log("hello USER  (❛̃ ͜ʖ❛̃)✌");
 console.log("pls follow me on my social media platforms hover on FOOTER")
 function show(){ console.log("openned the article/dl  section");
-document.getElementById("section-two").style.height="100vh";
+document.getElementById("section-two").style.height="100vh";           
 document.getElementById("main-container").style.height="800vh"
 //document.getElementById("frame-container").style.height="100vh"
                 }
@@ -492,8 +493,9 @@ function hide(){ console.log("closed the article/dl  section");
 document.getElementById("section-two").style.height="5.5vh";
 document.getElementById("main-container").style.height="770vh"
 }
-//----------------------------------------------------------------------------
-function myfunc(){
+//----------------------------------------------------------------this whole section of js codes  below  is  for this website's  search engine ---considering to do it will take much time ----------------------------
+                                                                    //--------------thats why for the mean time  it is  comented and  disregard its operation for a while ----(lacks  creativity )------------------                  
+/*function myfunc(){                                                                      //-----------------------this search  engine conditionals  is  for  id==\search  & id query @the top-------------------------
 let data=document.getElementById("search");
 let x=data.value;
 let word=document.getElementById("query");
@@ -515,19 +517,19 @@ break;
 case "#": word.innerHTML="item is Available  bellow ";
 break;
 default : word.innerHTML="ID NOT MATCH!!";   // we arer having an error  because strings  are getting set  as  attribute of  href  on  myfunct function 
-break;}
+break;}*/
 
 
 //the unique id  would  depend only  on  pruduct name  ok  external id  
 //like  about/head/section ids' would  not be used  in this matter
-}
-function myfunct(){
+
+/*function myfunct(){
 let datas=document.getElementById("search");
 let y=datas.value
 let btn=document.getElementById("id-search");
     btn.setAttribute("href",y);
 
-}
+}*/
 
 //pls validate the search engine using 
 // switch statement and if we have string as search query concatenate (#+string)
