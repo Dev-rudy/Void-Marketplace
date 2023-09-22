@@ -69,7 +69,7 @@ class, styles ,and structure . goodluck on mentaining the codes */
 
 
 
-body{background:black;background-image:url("https://i.pinimg.com/736x/88/0f/de/880fde5472a26f34e3ad97d53e4b9dd7.jpg");background-repeat:no-repeat;background-position:center;background-attachment:fixed;background-size:cover;}
+body{background:black;background-image:url("https://iphoneswallpapers.com/wp-content/uploads/2022/07/Cosmic-Space-iPhone-Wallpaper-HD.jpg");background-repeat:no-repeat;background-position:center;background-attachment:fixed;background-size:cover;}
 @media(orientation:landscape){body{background:black;background-image:url("https://scontent.fcrk2-2.fna.fbcdn.net/v/t1.15752-9/373030022_322629946955570_3514143750569960136_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=vgJ4scuds_gAX8SYSz_&_nc_ht=scontent.fcrk2-2.fna&oh=03_AdQN6NJy0TWeiCtqAe15An0FoN_RhLp1dx24TnIAs-uj7Q&oe=651F5692");background-repeat:no-repeat;background-position:center;background-attachment:fixed;background-size:cover;}}
 .header{border:1px solid transparent;width:100%;height:30px;color:white;}
 .search-bar{background-color: rgba(0, 0, 0,.5);float:right;position:relative;margin:3px;;outline-style:none;;color:white;border:transparent;;border-bottom:1px solid silver;width:30vw;font-family: 'Racing Sans One', cursive;margin-left:0px;}
@@ -85,9 +85,19 @@ body{background:black;background-image:url("https://i.pinimg.com/736x/88/0f/de/8
 
 #main-container{}
 
-.article-container{border:3px solid transparent;overflow:auto; background:rgba(0, 0, 0,.5);}
+.article-container{border:3px solid transparent;overflow:hidden; background:rgba(0, 0, 0,.5);}
 .head{letter-spacing:5px;color:#702283;text-align:center;background:#00b7c2;opacity:.9;font-family: 'Zen Tokyo Zoo', cursive;border-radius:10px;font-size:xx-large;}
-.content{color:#1bf5af;text-align:center;font-size:1rem;margin:10vw;margin-top:0px;font-family: 'Megrim', cursive;}
+.content{color:#1bf5af;text-align:center;font-size:1rem;margin:10vw;margin-top:0px;font-family: 'Megrim', cursive;margin-bottom:0;}
+.cta-buttons{display:grid;grid-template-columns:repeat(3,1fr);}
+#b1{margin-left:30vw;}
+#b2{margin-left:8vw;margin-right:5vw;}
+#b3{margin-right:30vw;}
+@media(orientation:landscape){#b1{margin-left:26vw;}#b2{margin-left:5vw;}}
+@media(orientation:portrait){#b1{margin-left:17vw;}.head{font-size:.9rem;}}
+.cta-wording{color:fuchsia;margin-top:10vh;text-align:center;font-family: 'Alumni Sans', sans-serif;font-size:2rem;font-weight:bold;text-align:center;}
+.cta-clicks{color:fuchsia;font-family:bold;background:black;margin:5vh 1vw 0 1vw;font-family: 'Zen Tokyo Zoo', cursive;font-size:1rem;}
+@media(orientation:portrait){.cta-wording{margin-top:10vh;}.cta-clicks{font-size:1rem;}}
+
 
 .aside{border:1px solid transparent;height:100vh;width:auto;display:grid;grid-gap:5px;margin-top:10vh;}
 @media (orientation:portrait){.aside{grid-template-rows:1fr 1fr;}}
@@ -130,7 +140,8 @@ marketing strategy also some SEO*/
 .aside-two{border:5px solid transparent;height:105vh;margin-top:5vh;}
 @media(orientation:landscape){.aside-two{height:180vh;}}
 
-.aside2-head{color:#702283;text-align:center;margin-top:5px;background:#00b7c2;display:block;font-family: 'Chonburi', cursive;border-radius:5px;}
+.aside2-head{color:#702283;text-align:center;margin-top:5px;display:block;font-family: 'Chonburi', cursive;border-radius:5px;background-color:#00b7c2;}
+
 .aside-two-items{border:3px solid hidden;/*border-top:2px hidden;border-bottom:2px hidden;*/display:grid;grid-template-columns:repeat(10,1fr);gap:5px;overflow-x:auto;}
 .best-pick-monthly{border:2px solid hidden;width:30vw;margin-top:1vh;height:30vh;background-color: rgba(0, 0, 0,.5);}
 @media(orientation:landscape){.best-pick-monthly{height:53vh;width:20vw;}}
@@ -188,7 +199,7 @@ to{left:200px; }
 /*sectuon description */ 
 .sec-descc{width:35vw;height:auto;border:2px solid hidden;margin-left:35vw;;overflow:hidden;}
 .section-two{margin-top:10vh;}
-.section2-main-container{display:grid;grid-template-rows:repeat(2,1fr);height:5.3vh;border:1px  solid  green;background-color: rgba(0, 0, 0,.5);overflow:auto;}
+.section2-main-container{display:grid;grid-template-rows:repeat(2,1fr);height:5.3vh;border:1px  solid  green;background-color: rgba(0, 0, 0,.5);overflow:hidden;}
 @media(orientation:landscape){ .section2-main-container{grid-template-columns:repeat(2,1fr);height:100vh;}
                               .sec-descc{width:40%;margin-left:53%;}}
 .section2-container{border:1px  solid  hidden ;width:100%;height:100vh;overflow:auto;background-color: rgba(0, 0, 0,.5);}
@@ -201,6 +212,8 @@ to{left:200px; }
 .btn-reads2{color:#1bf5af;position:absolute;font-weight:bold;background:purple;float:left;margin-left:3vw;}
 .section3-container{border:1px  solid  orange ;width:100%;height:100vh;overflow:auto;background-color: rgba(0, 0, 0,.5);margin-left:3px;}
 .zoom-top>a{position:fixed;bottom:5px;right:5px;font-size:5vh;opacity:0.5;}
+
+.mark1{color:red;font-family: 'Libre Barcode 39 Text', cursive;font-size:2rem;text-align:center;}
 
 .mark{color:red;font-family: 'Libre Barcode 39 Text', cursive;font-size:2rem;display:block;}
 .time{font-size:xx-small;color:gray;text-align:center;font-family: 'Chonburi', cursive;}
@@ -225,17 +238,22 @@ to{left:200px; }
   background: purple; 
   border-radius: 10px;
 }
-
+@media(orientation:portrait){::-webkit-scrollbar-thumb {
+  background:transparent; }}
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: fuchsia; 
 }
+@media(orientation:portrait){::-webkit-scrollbar-thumb:hover{
+  background:transparent; }}
 /*-----------------modern scrollbar from w3 schools copied------*/
-.frame-container{border:2px solid  hidden;width:100%;height:20vh;overflow-x:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5vw;margin-top:3vh;background-color: rgba(0, 0, 0,.5);}
+/*---.frame-container{border:2px solid  hidden;width:100%;height:20vh;overflow-x:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5vw;margin-top:3vh;background-color: rgba(0, 0, 0,.5);}
 
 @media(orientation:portrait){.frame-container{height:98vh;}}
-@media(orientation:landscape){.frame-container{height:40vh;}}
+@media(orientation:landscape){.frame-container{height:40vh;}}------*/
 
+#top-selling{background:#00b7c2;margin-top:0;width:30%;margin:auto;}
+@media(orientation:portrait){#top-selling{background:#00b7c2;margin-top:0;width:40%;font-size:.9rem;}}
 /*.ads{border:1px solid  blue;color:fuchsia;height:50vh;width:80%;margin:auto;text-align:center;font-size:2rem;font-weight:bold;}
 .adsclass{height:auto;width:99%;}*/
 /*closing the style */
@@ -271,20 +289,39 @@ float:right;margin:3px;background-color: rgba(0, 0, 0,.5);border-left:1px solid 
 <!---------------<time class="time"> updated August 15 2023, 10:00pm</time>------------>
 <p class="content"><b>Welcome to Void Marketplace.</b>
  here we have selected some of the cheapest, yet best and most outrageous 
- items we can find on Lazada itself. we offer products that are guaranteed 5 stars and
- have the best reviews from other users just like you. we make this so sure by only selecting 
- items that meet our standards. The most important thing here is that since we only pick valuable 
- items, this means that we only pick 100% guaranteed items with 100% good user reviews. This reduces       <!----- i consulted  ai correction from Deepl------->
- the chances of users getting scammed. so users can now rest easy. and not worry about scam shops from
- Lazada. and by screening/cherrypicking items from Lazada, we can now confidently say that our listed items
- would be scam free. because we only list items that have good reviews, not the ones that look sketchy. We promise to
- only list products that have been reviewed by our management and before we list them, we check each item to make sure
- that it meets all our product standards. so we can say that users are 100% safe to buy from us. we hope that maybe some
- of our listings will "catch your eye"! "strike your fancy!"
+ items we can find on Lazada. items just like these listed bellow ⬇️⬇️⬇️ 
   <br>Enjoy browsing!<br><br>
   
- <span style="font-family: 'Libre Barcode 39 Text', cursive;"> -Void Marketplace </span>
- 
+ <h2 class="aside2-head" id="top-selling">Top seller</h2>
+<div class="aside-two-items">
+<div class="best-pick-monthly" id="1"> <a href="https://goeco.mobi/Tn9GzgxU"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/a2d132383c4483119e394c2f4c8afd83.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">Korean Cute Satchel School Bag </h3><p class="bpm-item-price">₱55<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="2"> <a href="https://goeco.mobi/CMLk910v"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/a6fdf4ea5e3b470e626f8f15bea2745c.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">Women's Bags 4 in 1 Backpacks</h3><p class="bpm-item-price">₱298<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="3"> <a href="https://goeco.mobi/h696mtd8"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/f01a9bc67ce92f50498cc5bb055d40da.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">Women's Oxford cloth backpack</h3><p class="bpm-item-price">₱165<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="4"> <a href="https://goeco.mobi/2jLNbXfl"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/cf3c906dae01c4fc1d527d31e9adf37d.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">Korean Small Black Backpack</h3><p class="bpm-item-price">₱47<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="5"> <a href="https://goeco.mobi/TZvDIiKu"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/e95349e94dbb270ecc41356b492a9e99.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">catherine fashion korean backpack</h3><p class="bpm-item-price">₱146<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="6"> <a href="https://goeco.mobi/TI9oSB4a"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/e85ef4faca11f0edaf3e062bde871890.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">4IN1 Fashion Bunny Backpack</h3><p class="bpm-item-price">₱235<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="7"> <a href="https://goeco.mobi/z1szV5zX"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/8fd0ea98a23c695515e6cd1f71026303.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">Oxford Large Capacity Backpack </h3><p class="bpm-item-price">₱167<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="8"> <a href="https://goeco.mobi/xfxhADjp"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/514db733e543b9d4869079095dd60c9b.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title"> Korean Leather Printed Cute Mini Bag Back</h3><p class="bpm-item-price">₱65<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="9"> <a href="https://goeco.mobi/n2dGWr5R"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/ca0976998fea6aa03723173a7539a432.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">KOREAN FASHION NYLON CHEST BAG TO SHOULDER </h3><p class="bpm-item-price">₱170<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="10"> <a href="https://goeco.mobi/zkveiXak"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/a68446ca11b241cdd2e8a85187c045a5.jpg_120x120q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">sports outdoor backpack</h3><p class="bpm-item-price">₱342<br>🌟🌟🌟🌟⭐</p></div>
+</div> 
+<div class="aside-two-items">
+<div class="best-pick-monthly" id="11"> <a href="https://goeco.mobi/fcqvrRei"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/47a067e561e9f386ea6264d947aaa2c1.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">Boys' large backpack</h3><p class="bpm-item-price">₱209<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="12"> <a href="https://goeco.mobi/2DsXqcDi"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/c16de73318bdf4a8ee97f67288622b87.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">High School Bag Waterproof Casual Backpack</h3><p class="bpm-item-price">₱382<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="13"> <a href="https://goeco.mobi/QrxAGwmt"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/892e65ddc0e4b99fd78e5172b78945fd.png_720x720q80.png_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">Business laptop backpack</h3><p class="bpm-item-price">₱178<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="14"> <a href="https://goeco.mobi/ZJAMBXOE"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/7ffa551943d2fb34e52a185b2bedcad9.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">High quality Travel Waterproof Men Backpack</h3><p class="bpm-item-price">₱282<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="15"> <a href="https://goeco.mobi/qj1bnszs"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/dfc1daafbc173276062fb1cefeb09a62.jpg_120x120q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">Large Capacity Canvas School Bagpack</h3><p class="bpm-item-price">₱349<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="16"> <a href="https://goeco.mobi/cvxvd0eF"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="	https://lzd-img-global.slatic.net/g/p/c974f98e379879977dcfb5b2016adfd1.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">New Japan Fashion Backpack Unisex Bag</h3><p class="bpm-item-price">₱239<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="17"> <a href="https://goeco.mobi/yhRH1TRb"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/c7602f79c679516459c4bdb955888a26.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">WOVOW on sale backpack bag for men</h3><p class="bpm-item-price">₱206<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="18"> <a href="https://goeco.mobi/BUNj2hT1"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://ph-test-11.slatic.net/p/65aee35c7bb5929f15e976e83c9b2377.jpg" alt="product from lazada" title=""></div></a><h3 class="bpm-title">BAGPACK HIGH QUALITY LARGE 19iNCHES</h3><p class="bpm-item-price">₱390<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="19"> <a href="https://goeco.mobi/edcz3Ab3"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="	https://lzd-img-global.slatic.net/g/p/c2b3a4d8603e31ff92f1e4c4d0307e8e.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title">Fashion Waterproof Crossbody Bags</h3><p class="bpm-item-price">₱97<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="20"> <a href="https://goeco.mobi/Y5qvHveV"target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/4ca86625cf849ede87a47df71bfca324.jpg_720x720q80.jpg_.webp" alt="product from lazada" title=""></div></a><h3 class="bpm-title"> filabackpack korean fashon style school backpack</h3><p class="bpm-item-price">₱330<br>🌟🌟🌟🌟⭐</p></div>
+</div> 
+<br/>
+ <div ><p class="mark1"> -Void Marketplace</p> </div>
+ <br>
+ <div><p class="cta-wording">What are you looking for?</p></div>
+ <div class="cta-buttons"><a href="subpage .html#pc-units"><button class="cta-clicks" id="b1" onclick="alert('comming soon')">Pc(units)</button></a><a href="subpage .html #phones" ><button class="cta-clicks" id="b2" onclick="alert('comming soon')">Phones</button></a><a href="subpage .html#appliances"><button class="cta-clicks" id="b3" onclick="alert('coming soon')">Applieances</button></a></div>
  
 <!-- <aside> --->
 <!-- <div class="ads">place ads  here 💸💸💸💸💸💸💸💸💸 <img  class="adsclass"src="##" alt="" title=""></div> ----><!----------------------------------------------------------------figure this out---------------------------->
@@ -307,7 +344,7 @@ float:right;margin:3px;background-color: rgba(0, 0, 0,.5);border-left:1px solid 
 <a href="contentpage3.html"><div class="cta-items"><div class="cta-img-cont" id="cta3"><p class="cta-desc">Lazada Budol Finds </p></div></div> </a> <!---- undefinded  ranking----->
 <a href="contentpage4.html"><div class="cta-items"><div class="cta-img-cont" id="cta4"><p class="cta-desc">2k+ Gadgets for Gifts</p></div></div></a>
 <a href="contentpage5.html"><div class="cta-items"><div class="cta-img-cont" id="cta5"><p class="cta-desc">Household Tools</p></div></div></a>
-<a href="contentpage6.html" ><div class="cta-items"><div class="cta-img-cont" id="cta6"><p class="cta-desc">PC units & Accessories</p></div></div></a>
+<a href="contentpage6.html" ><div class="cta-items"><div class="cta-img-cont" id="cta6"><p class="cta-desc">PC units & Accessories<br>(top seller)</p></div></div></a>
 </div>
 
 </div>
@@ -355,10 +392,11 @@ float:right;margin:3px;background-color: rgba(0, 0, 0,.5);border-left:1px solid 
 <p class="section-description">watch our daily content and learn more </p>
 <div class="section-item-container">
 <div class="section-items"><div class="sec-img-cont"><a href="https://www.facebook.com/reel/671122361337238" target="_blank" ><img class="section-image" src="https://scontent.fcrk2-1.fna.fbcdn.net/v/t1.15752-9/375481225_1521430855332278_639340134522581756_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=qlAVf-z7w3EAX9YTueG&_nc_ht=scontent.fcrk2-1.fna&oh=03_AdRfOT-i0z_5idfuc_5oOcOygPh9VGpoP_AB885PwRbNLg&oe=65228A1F" alt="" title=""></a></div><h4 class="sec-head">Gaming Pc & Accessories</h4><div class="sec-descc"><p class="sec-desc">considering to replace  your old PC <br> or  upgrade your Components? <br> then go to (learn more) section <br> and  look for Pc Units & Accessories🆙🆙🆙</p></div></div>
-<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="banner.png" alt="" title=""></div><h4 class="sec-head">Comming Soon!</h4><div class="sec-descc"><p class="sec-desc">Stay Tuned😘</p></div></div>
-<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="banner.png" alt="" title=""></div><h4 class="sec-head">Comming Soon!</h4><div class="sec-descc"><p class="sec-desc">Stay Tuned😘</p></div></div>
-<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="banner.png" alt="" title=""></div><h4 class="sec-head">Comming Soon!</h4><div class="sec-descc"><p class="sec-desc">Stay Tuned😘</p></div></div>
-<div class="section-items"><div class="sec-img-cont"><img class="section-image" src="banner.png" alt="" title=""></div><h4 class="sec-head">Comming Soon!</h4><div class="sec-descc"><p class="sec-desc">Stay Tuned😘</p></div></div>
+<div class="section-items"><div class="sec-img-cont"><a href="https://www.facebook.com/reel/238425242531725" target="_blank" ><img class="section-image" src="https://scontent.fcrk2-2.fna.fbcdn.net/v/t1.15752-9/378253542_255700127450619_4006408172575739030_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=e0j_D3PCtCcAX_aoQrI&_nc_ht=scontent.fcrk2-2.fna&oh=03_AdS97vTK96baTG6859x8U_OgMlJSDnuV7fAlM9mtI4p88w&oe=652FCAD5" alt="" title=""></a></div><h4 class="sec-head">How it all Started</h4><div class="sec-descc"><p class="sec-desc">i have coded the website<br> and am also the one who market the products<br>i do all sorts of stuff to make <br> this business work</p></div></div>
+<div class="section-items"><div class="sec-img-cont"><a href="" target="_blank" ><img class="section-image" src="" alt="" title=""></a></div><h4 class="sec-head">comming soon</h4><div class="sec-descc"><p class="sec-desc"> <br>  <br>  <br> </p></div></div>
+<div class="section-items"><div class="sec-img-cont"><a href="" target="_blank" ><img class="section-image" src="" alt="" title=""></a></div><h4 class="sec-head">comming soon</h4><div class="sec-descc"><p class="sec-desc"> <br>  <br>  <br></p></div></div>
+<div class="section-items"><div class="sec-img-cont"><a href="" target="_blank" ><img class="section-image" src="" alt="" title=""></a></div><h4 class="sec-head">comming soon</h4><div class="sec-descc"><p class="sec-desc"> <br>  <br>  <br></p></div></div>
+
 </div>
 </div>
 </section>
@@ -401,39 +439,39 @@ and people just go ahead and buy it. Sometimes it also happens that images tell 
 
 <div class="aside-two-items"> <!---pls  do not copy this one  /this one is  just reused template from  the main  (aside-two-items ) ---->
 
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/D1I86PpH" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/abbeac8d5fc619424a274ed5540834e3.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">Slacks for Men</h3><p class="bpm-item-price">₱169<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/aQGf7Txi" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/8bf6e4aa44eb35174bbe11fd8c69e3de.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title"> Long sleeve for Men Polo Shirt </h3><p class="bpm-item-price">₱182<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/GVfLsyEo" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/77433766599b1014fea917ef2bc6637d.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">FORNINES Men's Polo Shirts </h3><p class="bpm-item-price">₱226<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/MpL3PLXV" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/f80f7c0970604a4858707851644f5a94.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">Men's Stripe Polo Print Short Sleeve</h3><p class="bpm-item-price">₱142<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="21"> <a href="https://goeco.mobi/D1I86PpH" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/abbeac8d5fc619424a274ed5540834e3.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">Slacks for Men</h3><p class="bpm-item-price">₱169<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="22"> <a href="https://goeco.mobi/aQGf7Txi" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/8bf6e4aa44eb35174bbe11fd8c69e3de.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title"> Long sleeve for Men Polo Shirt </h3><p class="bpm-item-price">₱182<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="23"> <a href="https://goeco.mobi/GVfLsyEo" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/77433766599b1014fea917ef2bc6637d.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">FORNINES Men's Polo Shirts </h3><p class="bpm-item-price">₱226<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="24"> <a href="https://goeco.mobi/MpL3PLXV" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/f80f7c0970604a4858707851644f5a94.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">Men's Stripe Polo Print Short Sleeve</h3><p class="bpm-item-price">₱142<br>🌟🌟🌟🌟⭐</p></div>
 </div>
 
 <div class="aside-two-items">
 
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/9VOY7KWX" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://ph-test-11.slatic.net/p/e601c13c2cf5a5090bbdae00b591216b.jpg" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">BSD BEST SELLER DANICA PUFF SLEEVES MIDI DRESS</h3><p class="bpm-item-price">₱195<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/Lj0ytZXM" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://filebroker-cdn.lazada.com.ph/kf/S998bb114aba645d9bad4fff89cf48604f.jpg" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">BANGKOK STYLE PUFF SLEEVE </h3><p class="bpm-item-price">₱239<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/ZVpwOLEJ" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/207fbb8c79928c4e0c40d7a5654fd3e7.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">DRESS Medium to Large Fitting Loose Polo</h3><p class="bpm-item-price">₱191<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/xg3uyxVf" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/935da2905638a0b617de18c1b1f69c4c.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">DIAMOND POLKA DRESS fit Small-Large</h3><p class="bpm-item-price">₱179<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="25"> <a href="https://goeco.mobi/9VOY7KWX" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://ph-test-11.slatic.net/p/e601c13c2cf5a5090bbdae00b591216b.jpg" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">BSD BEST SELLER DANICA PUFF SLEEVES MIDI DRESS</h3><p class="bpm-item-price">₱195<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="26"> <a href="https://goeco.mobi/Lj0ytZXM" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://filebroker-cdn.lazada.com.ph/kf/S998bb114aba645d9bad4fff89cf48604f.jpg" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">BANGKOK STYLE PUFF SLEEVE </h3><p class="bpm-item-price">₱239<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="27"> <a href="https://goeco.mobi/ZVpwOLEJ" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/207fbb8c79928c4e0c40d7a5654fd3e7.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">DRESS Medium to Large Fitting Loose Polo</h3><p class="bpm-item-price">₱191<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="28"> <a href="https://goeco.mobi/xg3uyxVf" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/935da2905638a0b617de18c1b1f69c4c.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">DIAMOND POLKA DRESS fit Small-Large</h3><p class="bpm-item-price">₱179<br>🌟🌟🌟🌟⭐</p></div>
 </div>
 
 <div class="aside-two-items">
 
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/rackuz8Y" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/6cc39e92efd0c0088f5ca79e5089404c.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">elegant susan dress with belt</h3><p class="bpm-item-price">₱99<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/yzdTwkEU" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/cb32692680cd25f922cc5e5758554538.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">Fashionable men's shoes</h3><p class="bpm-item-price">₱175<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/vUBwwwyf" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/a4d0349c3dda06baf1de882bc5e25059.png_720x720q80.png_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">Denim H Sports Slip-on Loafers Flat Shoes</h3><p class="bpm-item-price">₱111<br>🌟🌟🌟🌟⭐</p></div>
-<div class="best-pick-monthly" id=""> <a href="https://goeco.mobi/0HMFcoEk" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/ba3cc5716a68b7812f3105fd9ab79c56.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">Ladies Korean Style Sandals block Heels</h3><p class="bpm-item-price">₱139<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="29"> <a href="https://goeco.mobi/rackuz8Y" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/6cc39e92efd0c0088f5ca79e5089404c.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">elegant susan dress with belt</h3><p class="bpm-item-price">₱99<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="30"> <a href="https://goeco.mobi/yzdTwkEU" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/cb32692680cd25f922cc5e5758554538.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">Fashionable men's shoes</h3><p class="bpm-item-price">₱175<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="31"> <a href="https://goeco.mobi/vUBwwwyf" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/a4d0349c3dda06baf1de882bc5e25059.png_720x720q80.png_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">Denim H Sports Slip-on Loafers Flat Shoes</h3><p class="bpm-item-price">₱111<br>🌟🌟🌟🌟⭐</p></div>
+<div class="best-pick-monthly" id="32"> <a href="https://goeco.mobi/0HMFcoEk" target="_blank"><div class="bpm-img-container"><img class="bpm-img"src="https://lzd-img-global.slatic.net/g/p/ba3cc5716a68b7812f3105fd9ab79c56.jpg_720x720q80.jpg_.webp" alt="product from(Lazada)" title=""></div></a><h3 class="bpm-title">Ladies Korean Style Sandals block Heels</h3><p class="bpm-item-price">₱139<br>🌟🌟🌟🌟⭐</p></div>
 </div>
 
-
+<!----------------------------------------------------id  product count 1 to  32----------------------------------------------------------------------------------------->
 </div>
 
 </div>
 <button type="button" class="btn-reads1"onclick="show()">open</button> <button type="button" class="btn-reads2" onclick="hide()"><a href="#section2-head" style="color:#1bf5af;">close</a></button>
 </section>
 
-<div class="frame-container">
+<!---<div class="frame-container">
  <iframe class="frame1"  id="frame"src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02NcWVaARWDBxSjszh2LjnftAHR3wN35FHBcFn3MaSnhPLUdB3AZ2MfRBeWer6UWL9l%26id%3D61550258306981&show_text=true&width=500" width="500" height="612" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>
  <iframe  class="frame1" id="frame"src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02vzGU5bhLkjsRWeosJcVWhch1o19VXoXA8Vb5q6gRAa6Hdn9KATjFtb7d2kzUSZqCl%26id%3D61550258306981&show_text=true&width=500" width="500" height="697" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-</div>
+</div>---->
 
 </div>
 <footer class="footer" id="channels">
