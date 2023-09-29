@@ -85,7 +85,7 @@ body{background:black;background-image:url("https://iphoneswallpapers.com/wp-con
 @media(orientation:landscape){.container{width:80%;margin:auto;height:860vh;}}
 
 #main-container{}
-
+@media(orientation:portrait){#main-container{height:700vh;}}
 .article-container{border:3px solid transparent;overflow:hidden; background:rgba(0, 0, 0,.5);}
 .head{letter-spacing:5px;color:#702283;text-align:center;background:#00b7c2;opacity:.9;font-family: 'Zen Tokyo Zoo', cursive;border-radius:10px;font-size:xx-large;}
 .content{color:#1bf5af;text-align:center;font-size:1rem;margin:10vw;margin-top:0px;font-family: 'Megrim', cursive;margin-bottom:0;}
@@ -186,8 +186,9 @@ marketing strategy also some SEO*/
 @media (orientation:landscape){.section-container{height:80vh;}
                                .section-items{height:60vh;width:45vw;}
                               .section-item-container{height:68vh;grid-template-columns:repeat(5,1fr);gap:5px;overflow-y:scroll;}
+                              .section-description{font-size:1em;}
                               }
-@media (orientation:portrait){.section-description{font-size:.8em;}}                            
+@media (orientation:portrait){.section-description{font-size:1rem;}}                            
 .sec-img-cont{z-index:10;border:3px solidhidden;width:30vw;height:95vh;float:left;margin:1px;}
 .section-image{z-index:10;width:100%;height:auto;margin:0px;}
 @media(orientation:landscape){.sec-img-cont{z-index:10;border:3px solid hidden;width:45%;height:59vh;float:left;margin:1px;}
@@ -206,18 +207,25 @@ to{left:200px; }
 /*sectuon description */ 
 .sec-descc{width:35vw;height:auto;border:2px solid hidden;margin-left:35vw;;overflow:hidden;}
 .section-two{margin-top:10vh;}
-.section2-main-container{display:grid;grid-template-rows:repeat(2,1fr);height:5.3vh;border:1px  solid  green;background-color: rgba(0, 0, 0,.5);overflow:hidden;}
-@media(orientation:landscape){ .section2-main-container{grid-template-columns:repeat(2,1fr);height:100vh;}
-                              .sec-descc{width:40%;margin-left:53%;}}
-.section2-container{border:1px  solid  hidden ;width:100%;height:100vh;overflow:auto;background-color: rgba(0, 0, 0,.5);}
-.section2-head{color:#702283;text-align:center;background:#00b7c2;font-family: 'Chonburi', cursive;border-radius:5px;font-size:1em;;}
+.section2-main-container{display:grid;grid-template-rows:repeat(2,1fr);border:1px  solid  green;background-color: rgba(0, 0, 0,.5);overflow:hidden;}
+@media(oriantation:portrait){height:250vh;}
 
+@media(orientation:landscape){ .section2-main-container{grid-template-columns:repeat(2,1fr);height:100vh;height:170vh;}
+                              .sec-descc{width:40%;margin-left:53%;}}
+                              
+.section2-container{border:1px  solid  hidden ;width:100%;height:100vh;overflow:auto;background-color: rgba(0, 0, 0,.5);margin-bottom:0;}
+@media(orientation:portrait){.section2-container{height:90vh;}}
+@media(orientation:landscape){.section2-container{height:170vh;}}
+.section2-head{color:#702283;text-align:center;background:#00b7c2;font-family: 'Chonburi', cursive;border-radius:5px;font-size:1.5rem;;}
+@media(orientation:portrait){.section2-head{font-size:1rem;}}
+@media(orientation:landscape){.section2-head{font-size:1em;}}
 .subheading{color:#e94822;font-family: 'Silkscreen', cursive;font-weight:bold;text-align:center;}
 .sec3-subheading{/*color:#e94822;*/font-family: 'Silkscreen', cursive;font-weight:bold;text-align:center;background:lightblue;border-radius:10px;}
 .btn-reads1{color:#1bf5af;;font-weight:bold;background:purple;;margin-left:40vw;}
 @media(orientation:landscape){.btn-reads1{margin-left:33vw;}}
 .btn-reads2{color:#1bf5af;position:absolute;font-weight:bold;background:purple;float:left;margin-left:3vw;}
-.section3-container{border:1px  solid  orange ;width:100%;height:100vh;overflow:auto;background-color: rgba(0, 0, 0,.5);margin-left:3px;}
+.section3-container{border:1px  solid  orange ;width:100%;height:100vh;overflow:auto;background-color: rgba(0, 0, 0,.5);margin-left:3px;margin-top:0;}
+@media(orientation:landscape){.section3-container{height:170vh;}}
 .zoom-top>a{position:fixed;bottom:5px;right:5px;font-size:5vh;opacity:0.5;}
 
 .mark1{color:red;font-family: 'Libre Barcode 39 Text', cursive;font-size:2rem;text-align:center;}
@@ -411,15 +419,16 @@ float:right;margin:3px;background-color: rgba(0, 0, 0,.5);border-left:1px solid 
 <section class="section-two">
 <div class="section2-main-container"id="section-two">
 <div class="section2-container" >
-<h2 class="section2-head" id="section2-head">How not to get SCAMMED?</h2>
-<p class="section-description"> Let's admit it! A lot of us sometimes even blame the courier or delivery guy.
-if we get the wrong item from our orders. But what people don't know is that they are the ones to
- blame regarding this matter because they are the ones checking things out and confirming orders.
- Starting from the order stage to delivery day, people sometimes act like they don't even know anything about what they ordered when the parcel has already arrived.
- How is that? Now, to avoid this situation, we give you some advice on how to avoid </p>
+<h2 class="section2-head" id="section2-head">Exploring a Unique Online Shopping Experience</h2>
+<p class="section-description">In today's digital age, online shopping has become an integral part of our lives. With countless e-commerce platforms available, it can be challenging to find a unique shopping experience that stands out from the crowd. However, Void Market, an innovative online marketplace, aims to do just that. In this article, we will explore the features and benefits of Void Market and why it is worth checking out.
+Aesthetic Appeal and User Experience: One of the first things that captivate users when visiting Void Market is its visually stunning design. The website's sleek and modern interface creates an immersive shopping experience. The use of dark colors and minimalistic elements adds a touch of elegance, making it stand out from traditional online marketplaces.
+Product Range and Curation: Void Market prides itself on offering a carefully curated selection of products. From fashion and accessories to home decor and electronics, the platform caters to a wide range of interests. Each item available on Void Market is handpicked, ensuring quality and uniqueness. This attention to detail sets it apart from larger, more generic online marketplaces.
+Supporting Independent Sellers: Void Market provides a platform for independent sellers to showcase their products. By supporting these smaller businesses, users have the opportunity to discover hidden gems and support local artisans. This emphasis on supporting independent sellers fosters a sense of community and contributes to a more sustainable and ethical shopping experience.
+Secure and Convenient Shopping: Void Market prioritizes the security of its users' personal information and transactions. The platform utilizes secure payment gateways, ensuring that customers can shop with peace of mind. Additionally, Void Market offers a user-friendly interface, making navigation and purchasing hassle-free.
+Engaging Community and Social Features: Void Market goes beyond being just an online marketplace. It fosters a sense of community by incorporating social features. Users can create profiles, follow their favorite sellers, and engage in discussions. This interactive aspect adds a personal touch to the shopping experience, allowing users to connect with like-minded individuals and discover new products.</p>
 
 
-<h3 class="subheading"> Online Shopping Scams </h3><br>
+<!-----<h3 class="subheading"> Online Shopping Scams </h3><br>
 <h4  class="subheading">#1.) Look at the  Ratings</h4><br>
 <p class="section-description"> You can actually tell if a product is legit if it has a 5-star rating. Of course, after checking the ratings,
  you can then check the product description to see if it is really legit. A lot of scammers use Google Translator just to translate their own words into English.
@@ -439,7 +448,7 @@ and people just go ahead and buy it. Sometimes it also happens that images tell 
  so as you can see people sometimes rely on the images that they see ,posted as the face of the pruduct they sell online .,but in the end they get dissapointed that they did not even get the benefit of free shipping ,
  they get the werong size/color/item,sometimes items get to deliver in the wrong time (took a week),.well to avoid this you should stop relying on product apperance or image .always remember no matter how parsuasive and good looks the
  pruduct might be on the image ,dont buy on that verry quick please read on the descriptions verry well, pick the right variant,check if it has good rating,also check if it has goood comments,
- a product which has a lot of bad comments should be the one you should stay away of, also pruducts that doesnt have any reviews at all </p>
+ a product which has a lot of bad comments should be the one you should stay away of, also pruducts that doesnt have any reviews at all </p>------->
 </div>
 
 <div class="section3-container" title="pls click this title if you want to see more items"><a href="kptd subpage.html"><h3 id="kptd" class="sec3-subheading"><span style="color:green;">K</span><span style="color:white;">P</span><span style="color:red;">T</span><span style="color:gold;">D</span>(exclusives😘)</h3></a><br>
@@ -527,9 +536,13 @@ if (browser===true){window.open('https://void-market.netlify.app/','_blank')} //
 console.log("hello USER  (❛̃ ͜ʖ❛̃)✌");
 console.log("pls follow me on my social media platforms hover on FOOTER")
 function show(){ console.log("openned the article/dl  section");
-document.getElementById("section-two").style.height="100vh";           
+document.getElementById("section-two").style.height="200vh";           
 document.getElementById("main-container").style.height="800vh"
 //document.getElementById("frame-container").style.height="100vh"
+
+if (window.matchMedia("(orientation: landscape)").matches) {     /*this is  the way js  do css orientaton from stackoverflow  interesting  */
+   document.getElementById("section-two").style.height="170vh";
+}
                 }
 
 function hide(){ console.log("closed the article/dl  section");
