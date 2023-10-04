@@ -165,7 +165,7 @@ marketing strategy also some SEO*/
 @media(orientation:portrait){.bpm-title{margin-top:0px;text-align:center;font-size:.6em;}
                               .bpm-item-price{font-size:.6em;}}
                               
-.footer{border:1px solid #702283 ;height:55vh;width:100%;color:gray;text-align:center;font-size:.5rem;overflow:hidden;transition-duration:3s;background-color: rgba(0, 0, 0,.5);}
+.footer{border:1px solid #702283 ;height:55vh;width:100%;color:gray;text-align:center;font-size:.5rem;overflow:hidden;transition-duration:3s;background-color: rgba(0, 0, 0,.5);margin-top:10vh;}
 .footer-head{color:white;background:gray;}
 .footer-item-container{border:1px solid transparent;margin:auto;height:7vh;width:50vw;white-space:wrap;}
 .footer-item{border:1px solid transparent;width:10vw;height:5vh;float:left;margin:3px;}
@@ -208,9 +208,9 @@ to{left:200px; }
 .sec-descc{width:35vw;height:auto;border:2px solid hidden;margin-left:35vw;;overflow:hidden;}
 .section-two{margin-top:10vh;}
 .section2-main-container{display:grid;grid-template-rows:repeat(2,1fr);border:1px  solid  green;background-color: rgba(0, 0, 0,.5);overflow:hidden;}
-@media(oriantation:portrait){height:250vh;}
+@media(oriantation:portrait){.section2-main-container{height:250vh;}}
 
-@media(orientation:landscape){ .section2-main-container{grid-template-columns:repeat(2,1fr);height:100vh;height:170vh;}
+@media(orientation:landscape){ .section2-main-container{grid-template-columns:repeat(2,1fr);height:120vh;height:170vh;}
                               .sec-descc{width:40%;margin-left:53%;}}
                               
 .section2-container{border:1px  solid  hidden ;width:100%;height:100vh;overflow:auto;background-color: rgba(0, 0, 0,.5);margin-bottom:0;}
@@ -488,8 +488,9 @@ and people just go ahead and buy it. Sometimes it also happens that images tell 
 </div>
 <button type="button" class="btn-reads1"onclick="show()">open</button> <button type="button" class="btn-reads2" onclick="hide()"><a href="#section2-head" style="color:#1bf5af;">close</a></button>
 </section>
-
 </div>
+
+<br><br><br><br><br><br><br>
 <footer class="footer" id="channels">
 <h4 class="footer-head">About/infos</h4>
 <p class="foot-desc-one">site author:rudy/allen 🧑‍💻;<br>
@@ -533,7 +534,7 @@ document.getElementById("main-container").style.height="800vh"
 //document.getElementById("frame-container").style.height="100vh"
 
 if (window.matchMedia("(orientation: landscape)").matches) {     /*this is  the way js  do css orientaton from stackoverflow  interesting  */
-   document.getElementById("section-two").style.height="170vh";
+   document.getElementById("section-two").style.height="200vh";
 }
                 }
 
